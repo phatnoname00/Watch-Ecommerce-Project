@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+  
+    <!-- main css link -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../assets/css/signup.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon css -->
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.5.2-web/css/all.min.css"
+    />
+</head>
+
+<body>
+    <div class="loginUp">
+      <div class="container"style="width: 1200px;">
+        <!-- back to home page -->
+        <a href="index.html" class="mb-48 text-black"><i class="fa-solid fa-rotate-right" style="padding-right: 5px;"></i>Trang chủ</a>
+
+        <div class="row">
+        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+          <div class="form-block py-40">
+            <div class="text-center">
+              <h3 class="mb-12">Đăng Nhập</h3>
+              <p class="dark-gray mb-32">Đăng nhập để truy cập tài khoản của bạn và quản lý đơn đặt hàng đồng hồ của bạn một cách dễ dàng.</p>
+              <div class="accounts-links-block mb-24">
+                <a href="#" class="link">
+                  <h6>Google</h6>
+                  <span><i class="fa-brands fa-google"></i></span>
+                </a>
+                <a href="#" class="link">
+                  <h6>Facebook</h6>
+                  <span><i class="fa-brands fa-facebook"></i></span>
+                </a>
+              </div>
+              <h6 class="or mb-3">hoặc &nbsp;</h6>
+              
+              <form>
+
+                <div class="input-container bg-lightest-gray mb-24">
+                  <input type="email" class="form-control" placeholder="Email" id="emailDN">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                </div>
+                
+
+                <div class="input-container bg-lightest-gray mb-24">
+                  <input type="password" class="form-control" placeholder="Mật khẩu" id="passDN">
+                  <span class="toggle-password" toggle="#confirm-password"><i class="fa-solid fa-eye"></i></span>
+                </div>
+                
+
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <button type="submit" class="btn btn-dark btnLogin w-100" id="btnDN" onclick="check_DN()">
+                      Đăng Nhập
+                    </button>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="signup.html"><h5 class="text-black">Đăng Ký</h5></a>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/signUp.js"></script>
+</body>
+</html>

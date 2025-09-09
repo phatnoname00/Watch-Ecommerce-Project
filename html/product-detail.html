@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <!-- main css link -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../assets/css/product-detail.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- icon css -->
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div id="main-wrapper">
+
+        <!-- Start: Header Wrapper -->
+        <div id="header-wrapper" class="fixed-top">
+
+            <!-- Start: Header Top -->
+            <div id="header-top" class="bg-dark">
+                <div class="container header-top-container">
+                    <div class="d-flex justify-content-between align-items-center py-1">
+                        <span class="header-top-notice text-white my-auto fw-light" style="font-size: 13px;">Hội sale
+                            quốc
+                            tế, trăm deal
+                            ưu đãi - Giảm đến 50%.
+                            <a href="products.html">Shop now!</a>
+                        </span>
+                        <ul class="header-top-socials list-inline float-end m-0">
+                            <li class="list-inline-item"><a href="#" class="social-icon-link mx-1"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-icon-link mx-1"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="social-icon-link mx-1"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Header Top -->
+
+            <!-- Start: Navbar -->
+            <div id="navbar" class="navbar navbar-expand-lg bg-light">
+                <div class="container navbar-container">
+                    <!-- Navbar brand -->
+                    <a href="home.html" class="navbar-brand d-flex justify-content-between align-items-center me-auto">
+                        <img src="../assets/images/logo.png" alt="brand" style="height: 50px; border-radius: 50%;">
+                        <div class="d-flex flex-column justify-content-center">
+                            <span class="text-black text-uppercase fs-6 ms-2">Watch</span>
+                            <span class="text-black text-uppercase fs-6 ms-2">Store</span>
+                        </div>
+                    </a>
+
+                    <!-- Navbar menu -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-uppercase ms-2" id="offcanvasNavbarLabel">WatchStore</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <ul class="nav justify-content-center flex-grow-1 pe-2">
+                                <li class="nav-item menu-item">
+                                    <a href="#" class="nav-link menu-link text-uppercase mx-1 active">Trang chủ</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a href="products.html" class="nav-link menu-link text-uppercase mx-1">Sản phẩm</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a href="about-us.html" class="nav-link menu-link text-uppercase mx-1">Về chúng
+                                        tôi</a>
+                                </li>
+                                <li class="nav-item menu-item">
+                                    <a href="contact.html" class="nav-link menu-link text-uppercase mx-1">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <div class="navbar-social">
+                                <ul class="social-list">
+                                    <li>
+                                        <a href="#" class="social-link">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-link">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="social-link">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navbar action -->
+                    <ul class="nav navbar-action">
+                        <li class="nav-item">
+                            <a href="search.html" class="nav-link nav-right-link fs-5 mx-1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link nav-right-link fs-5 mx-1">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span class="count">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="wishlist.html" class="nav-link nav-right-link fs-5 mx-1">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="count">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link nav-right-link fs-5 mx-1 pe-0">
+                                <i class="fa-regular fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile bottom nav -->
+                <div class="mobile-bottom-nav">
+                    <a href="cart.html" class="action-btn">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="count">0</span>
+                    </a>
+                    <a href="wishlist.html" class="action-btn">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="count">0</span>
+                    </a>
+                    <a href="search.html" class="action-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="login.html" class="action-btn">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                    <a class="navbar-toggler action-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- End: Navbar -->
+
+        </div>
+        <!-- End: Header Wrapper -->
+
+        <!-- Start: Subnav Wrapper -->
+        <div id="subnav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex align-items-center">
+                        <a href="#" class="subnav_link">Trang chủ</a>
+                        <i class="fa-solid fa-chevron-right mx-2"></i>
+                        <a href="#" class="subnav_link">Sản phẩm</a>
+                        <i class="fa-solid fa-chevron-right mx-2"></i>
+                        <a href="#" class="subnav_link active">Chi tiết sản phẩm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Subnav Wrapper -->
+
+        <!-- Start: Content Wrapper -->
+        <div id="content-wrapper">
+            <div class="product-detail-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 p-detail-left">
+                            <div class="p-detail-img">
+                                <img src="../assets/images/product/DongHo1.jpg" alt="picture-main">
+                            </div>
+                            <div class="p-detail-img-list">
+                                <img src="../assets/images/product/DongHo1.jpg" alt="">
+                                <img src="../assets/images/product/DongHo1.jpg" alt="">
+                                <img src="../assets/images/product/DongHo1.jpg" alt="">
+                                <img src="../assets/images/product/DongHo1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-6 p-detail-right">
+                            <h5 class="p-detail-name">Đồng hồ nam Rolex sang trọng quý phái (mới nhất 2024)</h5>
+
+                            <div class="p-detail-price">
+                                <span class="price-old">30.000.000đ</span>
+                                <span class="price-current text-danger">29.899.000đ</span>
+                            </div>
+
+                            <div class="p-detail-review">
+                                <div class="p-detail-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="p-detail-sold">100 đã bán</span>
+                            </div>
+
+                            <div class="p-detail-quantity">
+                                <h5 class="quantity-title">Số lượng</h5>
+                                <div class="quantity-button">
+                                    <button type="button" class="decrement" onclick="decreasingNumber(this)"><i
+                                            class="fa-solid fa-minus"></i></button>
+                                    <input class="number" max="100" min="1" name="" type="number" value="1">
+                                    <button type="button" class="increment" onclick="increasingNumber(this)"><i
+                                            class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <h5>Chính Sách Bảo Hành</h5>
+                                <ul>
+                                    <li>- Bảo hành toàn quốc 1 năm cho máy, thay pin miễn phí trọn đời</li>
+                                    <li>- 1 đổi 1 trong vòng 30 ngày nếu sản phẩm bị lỗi từ nhà sản xuất</li>
+                                    <li>- Hổ trợ đổi hàng nhanh chóng nếu sản phẩm nhận về không ưng ý hoặc có nhu
+                                        cầu đổi hàng</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-detail-total">
+                                <h5 class="total-title">Tổng</h5>
+                                <h5 class="m-0">10.000.000</h5>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <a type="button" class="btn btn-danger p-detail-btn" id="btnBuy">Đặt
+                                        Mua</a>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <a href="cart.html" type="button" class="btn btn-success p-detail-btn">Thêm vào giỏ
+                                        hàng <i class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-detail-bottom">
+                <div class="container">
+                    <div class="detail-bottom-title mb-3">
+                        <h4>Thông Tin Chi Tiết</h4>
+                        <h4>Đánh Giá</h4>
+                    </div>
+                    <div class="detail-bottom-body">
+                        <div class="detail-content-form">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td>Đối Tượng Sử Dụng</td>
+                                        <td class="text-danger">Nam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Loại Đồng Hồ</td>
+                                        <td class="text-danger">pin/Quart</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chất Liệu Dây</td>
+                                        <td class="text-danger">Dây kim loại</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Độ Dày</td>
+                                        <td>10.4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Màu Sắc</td>
+                                        <td>Trắng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mức Độ Chống Nước</td>
+                                        <td>5atm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tính Năng</td>
+                                        <td class="text-danger">Dạ quang, giây, Giờ, Lịch 24 giờ, Lịch ngày, Lịch
+                                            thứ,
+                                            phút</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thương Hiệu</td>
+                                        <td>Casio</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="detail-review-form">
+                            <h6>Đồng hồ đẹp ghê</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products similar -->
+            <div id="products-similar">
+                <div class="container products-container">
+                    <div class="products-heading">
+                        <h2>Sản phẩm tương tự</h2>
+                    </div>
+
+                    <div class="slider-container">
+                        <div class="slider" id="slider-products-similar">
+
+                            <!-- Product card -->
+
+                        </div>
+                    </div>
+                    <button class="direction-btn slider-control-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="direction-btn slider-control-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- End: Content Wrapper -->
+
+        <!-- Start: Footer -->
+        <div id="footer">
+            <footer class="pt-40">
+                <div class="container">
+                    <div class="footer-top py-5">
+                        <a class="d-flex align-items-center me-auto" href="index.html">
+                            <img src="../assets/images/logo.png" alt="brand" style="height: 50px; border-radius: 50%;">
+                            <h5 class="text-black text-uppercase ms-2 text-white m-0">WatchStore</h5>
+                        </a>
+                        <form action="" class="newsletter-form">
+                            <div class="newsletter">
+                                <input type="text" name="Email" placeholder="Email của bạn">
+                                <button type="submit" class="subs-btn">Đăng ký</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer-main">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                                <div class="footer-widget mb-xl-0">
+                                    <h4 class="footer-title">Về chúng tôi</h4>
+                                    <ul class="list">
+                                        <li><a href="about-us.html">Giới thiệu công ty</a></li>
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Điều khoản thanh toán</a></li>
+                                        <li><a href="#">Chính sách bảo mật</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                                <div class="footer-widget mb-xl-0">
+                                    <h4 class="footer-title">Sản phẩm</h4>
+                                    <ul class="list">
+                                        <li><a href="#">Đồng hồ nam</a></li>
+                                        <li><a href="#">Đồng hồ nữ</a></li>
+                                        <li><a href="#">Đồng hồ cao cấp</a></li>
+                                        <li><a href="#">Đồng hồ thời trang</a></li>
+                                        <li><a href="#">Đồng hồ thể thao</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                                <div class="footer-widget mb-sm-0">
+                                    <h4 class="footer-title">Tài khoản</h4>
+                                    <ul class="list">
+                                        <li><a href="signup.html">Tạo tài khoản</a></li>
+                                        <li><a href="login.html">Đăng nhập</a></li>
+                                        <li><a href="signup.html">Đăng ký</a></li>
+                                        <li><a href="cart.html">Giỏ hàng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                                <div class="footer-widget mb-xl-0">
+                                    <h4 class="footer-title">Thông tin liên hệ</h4>
+                                    <ul class="list contact-list">
+                                        <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>12 Nguyễn Văn Bảo,
+                                                Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-phone"></i>+84 0123 456 789</a></li>
+                                        <li><a href="#"><i class="fa-regular fa-envelope"></i>watchstoregv@gmail.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                                <div class="footer-widget">
+                                    <h4 class="footer-title">Kết nối với chúng tôi</h4>
+                                    <ul class="list social-links">
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
+                                <div class="footer-widget">
+                                    <h4 class="footer-title">Thanh toán</h4>
+                                    <ul class="list payment-method">
+                                        <li><a href="#"><i class="fa-brands fa-cc-visa"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-cc-paypal"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p class="copyright-text">© All rights reserved - Bản quyền thuộc về WatchStore.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- End: Footer -->
+    </div>
+
+    <!-- jquery -->
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- initialization js -->
+    <script src="../assets/js/initialization.js"></script>
+
+    <!-- main js -->
+    <script src="../assets/js/main.js"></script>
+
+    <!--  js product detail -->
+    <script src="../assets/js/product-detail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+
+
+/* ================================= */
+/* sign Up */
+.signUp{
+    background: url(../images/Registration.png) no-repeat;  
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 64px 0 96px;
+    position: relative;
+    display: block;
+    unicode-bidi: isolate;
+}
+/* responsive container */
+@media (min-with:992px) {
+    .container,.container-lg, .container-md, .container-sm{
+        max-width: 960px;
+    }
+}
+
+@media (min-with:768px) {
+    .container, .container-md, .container-sm{
+        max-width: 720px;
+    }
+}
+
+@media (min-with:576px) {
+    .container, .container-sm{
+        max-width: 540px;
+    }
+}
+
+.accounts-links-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+@media (max-with:991px) {
+    .mb-24{
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-with:1199px) {
+    .mb-24{
+        margin-bottom: 22px;
+    }
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+
+/*  */
+.accounts-links-block .link{
+    background: #ECECF2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 196px;
+    padding: 8px;
+    padding-left: 16px;
+}
+a{
+    display: inline;
+    text-decoration: none;
+    color: unset;
+    transition: all 0.5s ease;
+}
+
+.accounts-links-block .link span{
+    width: 72px;
+    height: 48px;
+    background-color: #F8F8FF;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.or{
+    position: relative;
+    text-align: center;
+    padding-right: 5px;
+}
+.or::before{
+    left: 0;
+}
+.or::after,.or::before{
+    content: "";
+    height: 1px;
+    width: 46%;
+    position: absolute;
+    top: 14px;
+    background: #C6CBD2;
+}
+/* form */
+.input-container{
+    position: relative;
+    border-radius: 10px;
+    background-color:var(--background-color);
+
+}
+
+
+.input-container input{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    background: transparent;
+    border: none;
+    color: #7A7F85;
+    padding: 16px 32px 16px 16px;
+    
+}
+.input-container input:focus{
+    outline: none;
+    background-color:var(--background-color);
+}
+
+.input-container span{
+    width: 72px;
+    height: 48px;
+    background-color: #F8F8FF;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+span{
+    display: inline-block;
+    
+}
+
+.input-container span.toggle-password{
+    cursor: pointer;
+}
+
+/* cus btn */
+.btnSign:hover{
+    background: #7d6155;
+}
+/* ========================================== */
+/* login */
+.loginUp {
+    background:url(../images/Registration.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 64px 0 96px;
+    position: relative;
+    display: block;
+    unicode-bidi: isolate;
+}
